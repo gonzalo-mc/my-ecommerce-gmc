@@ -4,7 +4,7 @@ import { Card, Button, CardImg, CardImgProps, CardProps} from 'react-bootstrap';
 const ItemListContainer = (props) => {
     return (
         <div>
-            <Card style={{ width: '18rem' }}>
+            <Card className="my-4" style={{ width: '18rem' }}>
                 <Card.Img variant="top" src={props.image} />
                 <Card.Body>
                     <Card.Title>{props.title}</Card.Title>

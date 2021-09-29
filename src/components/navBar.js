@@ -9,10 +9,10 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";
 const Barra = () =>{
     return(
         <Navbar bg="light" expand="lg">
-            <Navbar.Brand href="#">Mi Ecommerce</Navbar.Brand>
+            <Navbar.Brand className="ms-4 me-2" href="#">Mi Ecommerce</Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
-                <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: '100px' }} navbarScroll>
+                <Nav className="ms-auto my-2 my-lg-0" style={{ maxHeight: '100px' }} navbarScroll>
                     <Nav.Link href="#action1">Home</Nav.Link>
                     <Nav.Link href="#action2">Contacto</Nav.Link>
                     <NavDropdown title="Accesorios" id="navbarScrollingDropdown">
@@ -23,8 +23,8 @@ const Barra = () =>{
                     </NavDropdown>
                 </Nav>
                 <Form className="d-flex">
-                    <FormControl type="search" placeholder="Search" className="mr-2" aria-label="Search"/>
-                    <Button variant="outline-success"> <FontAwesomeIcon icon={faSearch}/> </Button>
+                    <FormControl type="search" placeholder="Search" className="ms-4 mr-2" aria-label="Search"/>
+                    <Button className="ms-1 me-2" variant="outline-success"> <FontAwesomeIcon icon={faSearch}/> </Button>
                 </Form>
                 <CartButton/>
             </Navbar.Collapse>
