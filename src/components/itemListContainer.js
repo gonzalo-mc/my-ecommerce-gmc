@@ -5,7 +5,7 @@ const ItemListContainer = (props) => {
     return (
         <div>
             <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src="holder.js/100px180" />
+                <Card.Img variant="top" src={props.image} />
                 <Card.Body>
                     <Card.Title>{props.title}</Card.Title>
                     <Card.Text>{props.greeting}
@@ -20,3 +20,5 @@ const ItemListContainer = (props) => {
 }
 
 export default ItemListContainer
+
+// "holder.js/100px180"
