@@ -1,4 +1,4 @@
-
+import ItemCount from "./itemCount";
 import { Card, Button, CardImg, CardImgProps, CardProps} from 'react-bootstrap';
 
 const ItemListContainer = (props) => {
@@ -12,6 +12,7 @@ const ItemListContainer = (props) => {
                         {/* Some quick example text to build on the card title and make up the bulk of
                         the card's content. */}
                     </Card.Text>
+                    <ItemCount/>
                     <Button variant="primary">Agregar al carrito</Button>
                 </Card.Body>
             </Card>
