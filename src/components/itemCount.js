@@ -4,14 +4,22 @@ import {Button} from 'react-bootstrap';
 import { faMinus, faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const ItemCount = () => {
-    const [counter, setCounter] = useState(1);
+const ItemCount = ({stock=5, cantidad=1}) => {
+    const [counter, setCounter] = useState(cantidad);
 
     const handleIncrement = () => {
-        setCounter(counter + 1);
+        if (stock > counter){ 
+            setCounter(counter + 1);
+        }else {
+            console.log ("no hay mas stock")
+        };
     };
+    
+    
     const handleDecrement = () => {
-        setCounter(counter - 1);
+        if (counter > cantidad){
+            setCounter(counter - 1);
+        };
     };
 
     return (
