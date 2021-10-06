@@ -1,7 +1,16 @@
 import ItemCount from "./itemCount";
-import { Card, Button, CardImg, CardImgProps, CardProps} from 'react-bootstrap';
+import { Card, Button} from 'react-bootstrap';
+
+
+
 
 const ItemListContainer = (props) => {
+
+    const onAdd = (counter) => {
+        console.log('Cantidad: ', counter)
+    }
+
+
     return (
         <div>
             <Card className="my-4" style={{ width: '18rem' }}>
@@ -12,7 +21,7 @@ const ItemListContainer = (props) => {
                         {/* Some quick example text to build on the card title and make up the bulk of
                         the card's content. */}
                     </Card.Text>
-                    <ItemCount/>
+                    <ItemCount onAdd={onAdd}/>
                     <Button variant="primary">Agregar al carrito</Button>
                 </Card.Body>
             </Card>
