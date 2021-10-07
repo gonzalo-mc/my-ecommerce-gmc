@@ -1,5 +1,6 @@
 import ItemCount from "./itemCount";
 import { Card, Button} from 'react-bootstrap';
+import ItemList from "./itemList";
 
 
 
@@ -25,6 +26,9 @@ const ItemListContainer = (props) => {
                     <Button variant="primary">Agregar al carrito</Button>
                 </Card.Body>
             </Card>
+            <section>
+                <ItemList/>
+            </section>
         </div>
     )
 }
