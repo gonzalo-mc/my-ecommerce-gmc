@@ -11,6 +11,7 @@ const ItemListContainer = (props) => {
     }
 
 
+
     return (
         <div>
             <Card className="my-4" style={{ width: '18rem' }}>
@@ -22,7 +23,7 @@ const ItemListContainer = (props) => {
                         the card's content. */}
                     </Card.Text>
                     <ItemCount onAdd={onAdd}/>
-                    <Button variant="primary">Agregar al carrito</Button>
+                    {/* <Button variant="primary">Agregar al carrito</Button> */}
                 </Card.Body>
             </Card>
         </div>
