@@ -1,7 +1,7 @@
 
 
 import {Navbar,Nav, NavDropdown, Button, Form, FormControl} from "react-bootstrap";
-import CartButton from "./cartWidget";
+import CartButton from "../CartWidget/cartWidget";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
