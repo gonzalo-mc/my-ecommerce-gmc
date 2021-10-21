@@ -23,13 +23,13 @@ const ItemCount = ({stock=7, initial=1, onAdd}) => {
         };
     };
 
-    useEffect(() => {
-        if (isInitialMount.current) {
-            isInitialMount.current = false;
-        } else {
-            onAdd(counter)
-        }
-    })
+    // useEffect(() => {
+    //     if (isInitialMount.current) {
+    //         isInitialMount.current = false;
+    //     } else {
+    //         onAdd(counter)
+    //     }
+    // })
 
 
     return (
